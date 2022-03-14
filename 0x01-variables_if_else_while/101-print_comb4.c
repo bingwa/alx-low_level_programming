@@ -6,6 +6,7 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ *
  */
 
 int main(void)
@@ -23,7 +24,7 @@ int main(void)
 					putchar(d);
 					putchar(p);
 					putchar(q);
-
+					
 					if (d == '7' && p == '8')
 						continue;
 					
