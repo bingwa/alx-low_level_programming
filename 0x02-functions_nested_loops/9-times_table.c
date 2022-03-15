@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * time_table - prints 9 times table
+ * times_table - prints 9 times table, starting with 0
  * Return: void
  */
 
@@ -10,7 +10,7 @@ void times_table(void)
 	int a =  0;
 	int b;
 	int rep;
-		
+
 	while (a <= 9)
 	{
 
