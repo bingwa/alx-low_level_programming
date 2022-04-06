@@ -1,21 +1,29 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - prints the result of the multiplication followed by a new line
- * @argc: int
- * @argv: list
- * Return: 0
+ * main - multplies two numbers
+ * @argc: number of arguments passed to command line
+ * @argv: array with command line arguments
+ *
+ * Return: result of mul, otherwise print error if there are no
+ * two arguments, return 1
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	(void)argc;
+	int mul = 1;
 
-	if (argc != 3)
+	if (argc == 3)
 	{
-		printf("Error\n");
-		return (1);
+		mul *= atoi(argv[argc - 2]);
+		mul *= atoi(argv[argc - 1]);
+		printf("%d\n", mul);
 	}
-	printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
+	else
+		printf("Error\n");
 	return (0);
 }
+
